@@ -14,7 +14,7 @@ function M.get(c, opts)
     ["@constant"] = "Constant",
     ["@constant.builtin"] = "Define",
     ["@constant.macro"] = "Define",
-    ["@constructor"] = "Type",
+    ["@constructor.python"] = "Type",
     ["@diff.delta"] = "DiffChange",
     ["@diff.minus"] = "DiffDelete",
     ["@diff.plus"] = "DiffAdd",
