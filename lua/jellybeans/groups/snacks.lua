@@ -74,6 +74,7 @@ function M.get(c, opts)
 
     SnacksPickerDirectory = { fg = c.perano },
     SnacksPickerFile = { fg = c.foreground },
+    SnacksPickerGitCommit = { fg = c.raw_sienna },
 
     SnacksIconProperty = {
       bg = opts.transparent and "NONE" or c.background,
