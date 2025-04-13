@@ -18,14 +18,17 @@ function M.setup(opts)
   })
 end
 
-function M.load()
+---@param load_opts? {palette?: string}
+function M.load(load_opts)
   if is_loading then
     return
   end
 
   is_loading = true
   local ok, result = pcall(function()
-    return require("jellybeans.highlights").setup(require("jellybeans.config").opts)
+    local config = require("jellybeans.config")
+    local opts = vim.tbl_deep_extend("force", config.opts, load_opts or {})
+    return require("jellybeans.highlights").setup(opts)
   end)
   is_loading = false
 

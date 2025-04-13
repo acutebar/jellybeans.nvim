@@ -1,0 +1,1 @@
+require("jellybeans").load({ style = "light" })

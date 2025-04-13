@@ -5,6 +5,7 @@ local M = {}
 ---@field transparent? boolean
 ---@field italics? boolean
 ---@field flat_ui? boolean
+---@field palette? string
 ---@field on_highlights? fun(highlights: jellybeans.Highlights, colors: ColorScheme)
 ---@field on_colors? fun(colors: ColorScheme)
 M.defaults = {
@@ -12,6 +13,7 @@ M.defaults = {
   transparent = false,
   italics = true,
   flat_ui = true,
+  palette = nil,
   plugins = {
     all = false,
     auto = true,

@@ -30,7 +30,17 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 ```
 
 ```lua
+-- Default (vibrant dark)
 vim.cmd[[colorscheme jellybeans]]
+
+-- Vibrant light
+vim.cmd[[colorscheme jellybeans-light]]
+
+-- Muted dark
+vim.cmd[[colorscheme jellybeans-muted]]
+
+-- Muted light
+vim.cmd[[colorscheme jellybeans-muted-light]]
 ```
 
 ## 🛠️ Configuration
@@ -43,6 +53,7 @@ Jellybeans ships with the following defaults
   transparent = false,
   italics = true,
   flat_ui = true, -- toggles "flat UI" for pickers
+  palette = nil, -- specify a palette variant: nil (default/"vibrant") or "jellybeans_muted" 
   plugins = {
     all = false,
     auto = true, -- will read lazy.nvim and apply the colors for plugins that are installed
@@ -53,6 +64,18 @@ Jellybeans ships with the following defaults
   end,
 }
 ```
+
+### Available Palettes
+
+Jellybeans now offers two palette variants, each with dark and light modes:
+
+- **Vibrant** (default): The classic jellybeans with rich, saturated colors
+  - Dark: `jellybeans` (default)
+  - Light: `jellybeans_light`
+
+- **Muted**: A lower saturation, paper-like theme
+  - Dark: `jellybeans_muted`
+  - Light: `jellybeans_muted_light`
 
 You can easily override the color palette. For example, here's how to change the background color:
 

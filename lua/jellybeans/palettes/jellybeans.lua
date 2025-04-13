@@ -1,6 +1,7 @@
 local Util = require("jellybeans.util")
 
 ---@class Palette
+-- The vibrant (original) jellybeans palette
 local palette = {
   foreground = "#e8e8d3",
   background = "#151515",
