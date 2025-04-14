@@ -27,19 +27,12 @@ count_selected = { fg = "#e8e8d3", bg = "#2B5B77" }
 
 # Border
 border_symbol = "│"
-border_style = { fg = "#87d7ff" }
+border_style = { fg = "#1c1c1c" }
 
 [status]
-separator_open = ""
-separator_close = ""
-separator_style = { fg = "#606060", bg = "#606060" }
+sep_left = { open = "", close = "" }
+sep_right = { open = "", close = "" }
 
-# Mode
-mode_normal = { fg = "#151515", bg = "#8fbfdc", bold = true }
-mode_select = { fg = "#151515", bg = "#c6b6ee", bold = true }
-mode_unset = { fg = "#151515", bg = "#700089", bold = true }
-
-# Progress
 progress_label = { fg = "#e8e8d3", bold = true }
 progress_normal = { fg = "#151515" }
 progress_error = { fg = "#902020" }
@@ -50,6 +43,16 @@ permissions_r = { fg = "#e6a75a" }
 permissions_w = { fg = "#d98870" }
 permissions_x = { fg = "#99ad6a" }
 permissions_s = { fg = "#403c41" }
+
+[mode]
+normal_main = { fg = "#151515", bg = "#8fbfdc", bold = true }
+normal_alt = { fg = "#e8e8d3", bg = "#606060" }
+
+select_main = { fg = "#151515", bg = "#c6b6ee", bold = true }
+select_alt = { fg = "#e8e8d3", bg = "#606060" }
+
+unset_main = { fg = "#151515", bg = "#700089", bold = true }
+unset_alt = { fg = "#e8e8d3", bg = "#606060" }
 
 [select]
 border = { fg = "#87d7ff" }
@@ -113,3 +116,4 @@ rules = [
   # Fallback
   { name = "*/", fg = "#8197bf" },
 ]
+
