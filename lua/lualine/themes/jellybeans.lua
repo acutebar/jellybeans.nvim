@@ -3,7 +3,8 @@ local config = require("jellybeans.config")
 
 local function get_theme()
   local style = config.opts.style or (vim.o.background == "light" and "light" or "dark")
-  local c = palettes.get_palette("jellybeans", { style = style })
+  local palette_name = config.opts.palette or "jellybeans"
+  local c = palettes.get_palette(palette_name, { style = style })
 
   if not c then
     vim.notify("Failed to load jellybeans palette for lualine", vim.log.levels.ERROR)
