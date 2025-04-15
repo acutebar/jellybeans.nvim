@@ -19,7 +19,10 @@ function M.setup(opts)
 
   local style = opts.style or (vim.o.background == "light" and "light" or "dark")
   local palette_name = opts.palette or "jellybeans"
-  local colors = require("jellybeans.palettes").get_palette(palette_name, { style = style })
+  local colors = require("jellybeans.palettes").get_palette(palette_name, { 
+    style = style,
+    on_colors = opts.on_colors
+  })
   if not colors then
     vim.notify("Failed to load jellybeans colorscheme", vim.log.levels.ERROR)
     return
