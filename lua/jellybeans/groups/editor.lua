@@ -46,6 +46,10 @@ function M.get(c, opts)
       bg = c.calypso,
       bold = true,
     },
+    PmenuSbar = {
+      bg = c.tundora,
+      fg = c.zambezi,
+    },
     Question = { fg = c.mantis },
     QuickFixLine = { bg = c.bright_grey },
     Search = { fg = c.wewak, bg = c.cocoa_brown },
