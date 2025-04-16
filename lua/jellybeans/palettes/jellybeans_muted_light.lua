@@ -87,6 +87,7 @@ palette.visual = palette.cocoa_brown
 palette.none = "NONE"
 
 palette.float_bg = palette.grey_three
-palette.float_border = palette.foreground
+palette.float_border = palette.tundora
 
 return palette
+

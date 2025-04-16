@@ -12,7 +12,9 @@ local function bordered_picker(c, opts)
     SnacksPickerInputTitle = { bg = opts.transparent == true and "NONE" or c.background, fg = c.biloba_flower },
     SnacksPickerListTitle = { bg = opts.transparent == true and "NONE" or c.background, fg = c.koromiko },
     SnacksPickerPreviewTitle = { bg = opts.transparent == true and "NONE" or c.background, fg = c.koromiko },
-    SnacksPickerBorder = { bg = opts.transparent == true and "NONE" or c.background },
+    SnacksPickerBorder = {
+      link = "FloatBorder",
+    },
     SnacksPickerToggle = { bg = opts.transparent == true and "NONE" or c.background, fg = c.perano },
   }
 end

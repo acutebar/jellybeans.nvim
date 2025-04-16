@@ -4,7 +4,7 @@ local M = {}
 function M.get_palette(palette, opts)
   -- Set palette to "jellybeans" (default) or the specified palette
   local type_palette = palette or "jellybeans"
-  
+
   -- Add "_light" suffix for light style
   if opts.style == "light" then
     type_palette = type_palette .. "_light"

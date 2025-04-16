@@ -87,6 +87,6 @@ palette.visual = palette.tundora
 palette.none = "NONE"
 
 palette.float_bg = palette.gravel
-palette.float_border = palette.foreground
+palette.float_border = palette.tundora
 
 return palette
