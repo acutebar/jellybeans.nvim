@@ -10,9 +10,6 @@ function M.setup(opts)
     group = vim.api.nvim_create_augroup("JellybeansColorscheme", { clear = true }),
     pattern = "background",
     callback = function()
-      if vim.g.colors_name ~= "jellybeans" then
-        return
-      end
       local config = require("jellybeans.config")
       local b = vim.o.background
       config.opts.style = b == "light" and "light" or "dark"
