@@ -134,14 +134,6 @@ require('lualine').setup {
 - [jellybeans-nvim](https://github.com/metalelf0/jellybeans-nvim) by [metalelf0](https://github.com/metalelf0)
 - [jbeans](https://github.com/scajanus/jbeans) by [scajanus](https://github.com/scajanus)
 
-## 🤝 Contributors
-
-<a href="https://github.com/wtfox/jellybeans.nvim/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=wtfox/jellybeans.nvim" />
-</a>
-
-Made with [contrib.rocks](https://contrib.rocks).
-
 ## 🌟 Star History
 
 <a href="https://star-history.com/#wtfox/jellybeans.nvim&Date">
