@@ -65,7 +65,6 @@ function M.get(c, opts)
     ["@markup.link"] = { fg = c.tea_green },
     ["@markup.link.label"] = "SpecialChar",
     ["@markup.link.label.symbol"] = "Identifier",
-    ["@markup.link.url"] = "Underlined",
     ["@markup.list"] = { fg = c.morning_glory }, -- For special punctutation that does not fall in the categories before.
     ["@markup.list.checked"] = { fg = c.tea_green }, -- For brackets and parens.
     ["@markup.list.markdown"] = { fg = c.raw_sienna, bold = true },
