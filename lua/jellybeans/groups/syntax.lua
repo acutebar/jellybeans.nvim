@@ -5,7 +5,7 @@ local M = {}
 function M.get(c, opts)
   return {
     Bold = { bold = true },
-    Comment = { fg = c.grey },
+    Comment = { fg = c.grey, italic = opts.italics },
     Constant = { fg = c.raw_sienna },
     Define = { fg = c.ship_cove },
     Delimiter = { fg = c.hoki },
@@ -17,7 +17,7 @@ function M.get(c, opts)
     Italic = { italic = opts.italics },
     Operator = { fg = c.perano },
     PreProc = { fg = c.ship_cove },
-    Property = { fg = c.foreground, italic = opts.italics },
+    Property = { fg = c.foreground },
     Special = { fg = c.biloba_flower },
     SpecialChar = { fg = c.raw_sienna },
     Statement = { fg = c.morning_glory },
