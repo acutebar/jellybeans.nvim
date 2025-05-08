@@ -1,41 +1,41 @@
 local M = {}
 
 ---@param opts? jellybeans.Config
-function M.setup(opts)
-  if not opts then
-    opts = require("jellybeans.config").opts
-  end
-
-  local current_scheme = vim.g.colors_name
-
+function M.setup(opts, palette_name_override)
   if vim.g.colors_name then
     vim.cmd("hi clear")
   end
 
   vim.opt.termguicolors = true
 
-  vim.o.background = opts.style == "light" and "light" or "dark"
-  vim.g.colors_name = current_scheme or "jellybeans"
+  local bg = vim.o.background
+  local palette_name = palette_name_override and palette_name_override or (opts and opts.background[bg]) or "jellybeans"
+  local p = require("jellybeans.palettes").get_palette(palette_name, opts)
 
-  local style = opts.style or (vim.o.background == "light" and "light" or "dark")
-  local palette_name = opts.palette or "jellybeans"
-  local colors = require("jellybeans.palettes").get_palette(palette_name, { 
-    style = style,
-    on_colors = opts.on_colors
-  })
-  if not colors then
-    vim.notify("Failed to load jellybeans colorscheme", vim.log.levels.ERROR)
-    return
-  end
+  local groups = require("jellybeans.groups").setup(p.palette, opts)
 
-  local groups = require("jellybeans.groups").setup(colors, opts)
-
+  local terminal_colors = nil
   for group, hl in pairs(groups) do
-    hl = type(hl) == "string" and { link = hl } or hl
-    vim.api.nvim_set_hl(0, group, hl)
+    if group == "_terminal_colors" then
+      terminal_colors = hl
+    else
+      hl = type(hl) == "string" and { link = hl } or hl
+      vim.api.nvim_set_hl(0, group, hl)
+    end
   end
 
-  return colors, groups, opts
+  if terminal_colors then
+    for i = 0, 15 do
+      vim.g["terminal_color_" .. i] = terminal_colors[i]
+    end
+  end
+
+  local has_lualine, lualine = pcall(require, "lualine")
+  if has_lualine then
+    lualine.refresh()
+  end
+
+  return p.palette, groups, opts
 end
 
 return M

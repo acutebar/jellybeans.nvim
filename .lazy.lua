@@ -1,19 +1,23 @@
 local M = {
   module = "jellybeans",
-  colorscheme = "jellybeans",
+  background = {
+    dark = "jellybeans_muted",
+    light = "jellybeans_muted_light",
+  },
   opts = {
-    flat_ui = true,
+    flat_ui = false,
     plugins = {
       all = true,
     },
   },
   globals = { vim = vim },
   cache = {}, ---@type table<string, boolean>
+  colorscheme = "jellybeans",
 }
 
 function M.reset()
   require("jellybeans.util").cache.clear()
-  local colors = require("jellybeans.palettes").get_palette("jellybeans", { style = "dark" })
+  local colors = require("jellybeans.palettes").get_palette("jellybeans", {})
   M.globals.colors = colors
   M.globals.c = colors
 end
