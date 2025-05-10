@@ -15,6 +15,7 @@ M.plugins = {
   ["nvim-treesitter-context"] = "treesitter_context",
   ["snacks.nvim"] = "snacks",
   ["telescope.nvim"] = "telescope",
+  ["trouble.nvim"] = "trouble",
   ["which-key.nvim"] = "which_key",
 }
 
