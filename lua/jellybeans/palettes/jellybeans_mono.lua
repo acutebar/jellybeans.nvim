@@ -118,6 +118,7 @@ return {
       ["@punctuation.special"] = { fg = p.silver },
       ["@keyword"] = { link = "Keyword" },
       ["@keyword.function"] = { link = "Keyword" },
+      ["@keyword.function.go"] = { link = "Keyword" },
       ["@function"] = { fg = p.accent_color_2, bold = true },
       ["@function.builtin"] = { fg = p.accent_color_2, bold = true },
       ["@function.call"] = { fg = p.accent_color_2, bold = true },
