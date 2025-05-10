@@ -15,8 +15,8 @@ local function get_theme()
   -- For monochromatic theme, use accent colors instead of regular colors
   local is_mono = palette_name:find("mono") ~= nil
 
-  local normal_bg = is_mono and c.accent_color_1 or c.morning_glory
-  local insert_bg = is_mono and c.accent_color_2 or c.green_smoke
+  local normal_bg = is_mono and c.accent_color_2 or c.morning_glory
+  local insert_bg = is_mono and c.accent_color_1 or c.green_smoke
   local visual_bg = is_mono and c.grey_chateau or c.koromiko
   local replace_bg = is_mono and c.boulder or c.raw_sienna
   local command_bg = is_mono and c.silver or c.biloba_flower
