@@ -200,6 +200,9 @@ return {
       GitSignsAdd = { fg = p.git.add.bg },
       GitSignsChange = { fg = p.git.change.bg },
       GitSignsDelete = { fg = p.git.delete.bg },
+
+      LspReferenceWrite = { bg = p.bright_grey },
+      LspReferenceRead = { bg = p.bright_grey },
     }
   end,
 }
