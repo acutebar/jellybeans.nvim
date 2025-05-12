@@ -97,6 +97,9 @@ function M.get(c, opts)
       bg = opts.transparent and "NONE" or c.background,
       fg = c.koromiko,
     },
+    SnacksDim = {
+      link = "Comment",
+    },
   })
 end
 
