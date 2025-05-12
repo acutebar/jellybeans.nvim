@@ -203,6 +203,7 @@ return {
 
       LspReferenceWrite = { bg = p.bright_grey },
       LspReferenceRead = { bg = p.bright_grey },
+      LspReferenceText = { bg = p.bright_grey },
     }
   end,
 }
