@@ -44,11 +44,6 @@ function M.setup(opts, palette_name_override)
     end
   end
 
-  local has_lualine, lualine = pcall(require, "lualine")
-  if has_lualine then
-    lualine.refresh()
-  end
-
   return p.palette, groups, opts
 end
 
