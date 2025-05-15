@@ -5,11 +5,11 @@ local M = {}
 function M.get(c, opts)
   return {
     InclineNormal = {
-      bg = opts.transparent and "NONE" or c.background,
+      bg = opts.transparent and c.none or c.background,
       fg = c.grey,
     },
     InclineNormalNC = {
-      bg = opts.transparent and "NONE" or c.background,
+      bg = opts.transparent and c.none or c.background,
       fg = c.grey,
     },
   }
