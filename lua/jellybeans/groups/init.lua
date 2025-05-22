@@ -7,6 +7,7 @@ M.plugins = {
   ["blink.cmp"] = "blink",
   ["CopilotChat.nvim"] = "copilotchat",
   ["dashboard-nvim"] = "dashboard",
+  ["dressing.nvim"] = "dressing",
   ["gitsigns.nvim"] = "gitsigns",
   ["grapple.nvim"] = "grapple",
   ["fzf-lua"] = "fzf_lua",
