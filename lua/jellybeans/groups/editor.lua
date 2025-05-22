@@ -9,7 +9,7 @@ function M.get(c, opts)
       fg = c.foreground,
     },
     NormalFloat = {
-      bg = opts.transparent and "NONE" or c.background,
+      bg = opts.transparent and "NONE" or c.float_bg,
       fg = c.foreground,
     },
     NormalNC = {
