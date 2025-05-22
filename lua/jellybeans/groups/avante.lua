@@ -97,6 +97,39 @@ function M.get(c, opts)
       bg = c.grey_three,
       fg = c.foreground,
     },
+    AvanteFileSelectorNormal = {
+      bg = opts.transparent and "NONE" or c.grey_three,
+      fg = c.foreground,
+    },
+    AvanteFileSelectorBorder = {
+      bg = opts.transparent and "NONE" or c.grey_three,
+      fg = c.grey_one,
+    },
+    AvanteFileSelectorTitle = {
+      bg = c.koromiko,
+      fg = c.background,
+      bold = true,
+    },
+    AvanteFileSelectorSelection = {
+      bg = c.grey_one,
+      fg = c.foreground,
+    },
+    AvanteFileSelectorCaret = {
+      fg = c.koromiko,
+      bg = c.grey_one,
+    },
+    AvanteFileSelectorMatching = {
+      fg = c.koromiko,
+      bold = true,
+    },
+    AvanteFileSelectorPrompt = {
+      bg = opts.transparent and "NONE" or c.grey_three,
+      fg = c.foreground,
+    },
+    AvanteFileSelectorCounter = {
+      fg = c.grey,
+      bg = opts.transparent and "NONE" or c.grey_three,
+    },
   }
 end
 
