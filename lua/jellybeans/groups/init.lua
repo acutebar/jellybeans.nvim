@@ -13,6 +13,7 @@ M.plugins = {
   ["fzf-lua"] = "fzf_lua",
   ["incline.nvim"] = "incline",
   ["lazy.nvim"] = "lazy",
+  ["mini.nvim"] = "mini",
   ["neo-tree.nvim"] = "neotree",
   ["nvim-treesitter-context"] = "treesitter_context",
   ["snacks.nvim"] = "snacks",
