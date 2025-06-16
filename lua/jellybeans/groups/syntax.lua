@@ -36,6 +36,7 @@ function M.get(c, opts)
     LspReferenceRead = { bg = c.cocoa_brown },
     LspReferenceWrite = { bg = c.cocoa_brown },
     LspReferenceText = { bg = c.cocoa_brown },
+    LspSignatureActiveParameter = { fg = c.warning },
 
     -- HTML
     htmlTag = { fg = c.grey_chateau },
