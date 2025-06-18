@@ -69,9 +69,9 @@ palette.cursor_line_nr = {
 }
 
 palette.git = {
-  add = { bg = palette.bright_grey, fg = palette.info },
+  add = { bg = palette.bright_grey, fg = palette.ok },
   delete = { fg = palette.error },
-  change = { fg = palette.ok },
+  change = { fg = palette.info },
   text = { bg = palette.bright_grey, fg = palette.warning },
 }
 
